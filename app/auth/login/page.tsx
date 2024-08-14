@@ -33,7 +33,7 @@ const page = () => {
             <Link href={google_login_url}>
               <Button className="w-full rounded-sm bg-transparent hover:bg-transparent border border-[#343A40] mb-8">
                 <Image src={"/google.png"} alt={""} width={15} height={15} />
-                <span className="pl-2">Sign Up with Google</span>
+                <span className="pl-2" style={{color:"white"}}>Sign Up with Google</span>
               </Button>
             </Link>
           </CardContent>
