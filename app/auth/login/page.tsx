@@ -15,8 +15,7 @@ import Link from "next/link";
 const page = () => {
   const redirect_url = process.env.GOOGLE_LOGIN_REDIRECT;
   const google_login_url =
-    "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=" +
-    redirect_url;
+    "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reach-inbox-4sdm9swb1-vidhis-projects-4c6a9889.vercel.app/dashboard" 
   return (
     <div className="bg-black h-screen">
       <div className="w-full py-5 flex justify-center items-center">
