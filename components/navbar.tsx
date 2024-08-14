@@ -5,7 +5,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
-    <div className="p-6 mt-1 bg-[#FAFAFA] dark:bg-[#1F1F1F] flex justify-between items-center">
+    <div className="px-6 py-4  bg-[#FAFAFA] dark:bg-[#1F1F1F] flex justify-between items-center">
       <div className="font-[700] text-base text-white pl-4">Onebox</div>
 
       <div className="flex items-center">

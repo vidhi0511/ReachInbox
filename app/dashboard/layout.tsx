@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Sidebar from "@/components/sidebar";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Separator } from "@/components/ui/separator";
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
   return (
@@ -11,11 +12,20 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
-      <div className="flex min-h-screen">
+      <div className="flex min-h-screen bg-black">
         <Sidebar />
+
         <div className="flex-1 flex flex-col">
+          <Separator
+            orientation={"horizontal"}
+            className="h-[2px] bg-[#33383F] mt-1"
+          />
           <Navbar />
-          <main className="flex-1 p-8 bg-gray-100">{children}</main>
+          <Separator
+            orientation={"horizontal"}
+            className="h-[2px] bg-[#33383F]"
+          />
+          <main className="h-full">{children}</main>
         </div>
       </div>
     </ThemeProvider>

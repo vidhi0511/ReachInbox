@@ -9,10 +9,11 @@ import { MdViewList } from "react-icons/md";
 import { MdBarChart } from "react-icons/md";
 import { BsInboxFill } from "react-icons/bs";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "./ui/button";
 const Sidebar = () => {
   return (
-    <div className="px-1 bg-[#FAFAFA] dark:bg-[#101113] relative">
+    <div className="px-1 bg-[#FAFAFA] dark:bg-[#101113] relative border-e-2 border-[#33383F]">
       <div className="py-6 px-3">
         <Image src={"/logo-dark-theme.png"} alt={""} width={32} height={32} />
       </div>
@@ -32,8 +33,14 @@ const Sidebar = () => {
         <Link href={"#"}>
           <IoIosSend size={26} className="text-[#AEAEAE] hover:text-white" />
         </Link>
-        <Link href={"#"}>
-          <BsInboxFill size={26} className="text-[#AEAEAE] hover:text-white" />
+        <Link href={"#"} className="relative">
+          <BsInboxFill
+            size={32}
+            className="text-white bg-[#2F3030] px-1 rounded-sm"
+          />
+          <div className="absolute -top-2 -right-3 w-5 h-5 rounded-full bg-[#FA5252] text-white text-[8px] flex justify-center items-center">
+            12+
+          </div>
         </Link>
         <Link href={"#"}>
           <MdBarChart size={26} className="text-[#AEAEAE] hover:text-white" />
