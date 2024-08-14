@@ -14,7 +14,7 @@ const InboxCard = () => {
             <div className="text-xs text-[#fcfcfc66]">Mar 7</div>
           </div>
           <div className="text-xs text-[#E1E0E0] pb-3 pt-1">
-            I've tried a lot and .
+            {`I've tried a lot and .`}
           </div>
           <div className="flex gap-x-1 pb-4">
             <Badge variant="secondary">
